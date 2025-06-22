@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #ece8e8;
+}
+
+.whole-container{
+    margin: 2.5rem;
+    /* width: 100vw;
+    height: 100vh; */
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #c7bebe;
+    padding: 1rem;
+}
+
+main{
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    background: #f0ecec;
+}
+
+h1{
+    color: #ca4545;
+    margin-bottom: .3rem;
+    font-weight: 500;
+}
+
+span{
+    font-weight: 300;
+}
+
+#services{
+    background: #d8d6d6;
+    padding: 2rem;
+}
+
+h2{
+    text-align: center;
+}
+
+.services{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin: 1.5rem;
+}
+
+.installation{
+    width: 100%;
+    height: 100px;
+    background: #979696;
+    color: #d8d6d6;
+    text-align: center;
+    padding-top: 50px;
+}
+.project-manage{
+    width: 100%;
+    height: 100px;
+    background: #979696;
+    color: #d8d6d6;
+    text-align: center;
+    padding-top: 50px;
+}
+.sales{
+    width: 100%;
+    height: 100px;
+    background: #979696;
+    color: #d8d6d6;
+    text-align: center;
+    padding-top: 50px;
+}
+.smart-card{
+    width: 100%;
+    height: 100px;
+    background: #979696;
+    color: #d8d6d6;
+    text-align: center;
+    padding-top: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
