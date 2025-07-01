@@ -26,42 +26,29 @@ a{
     color: #312e64;
 }
 
-button{
-    all: unset;
-    background: #c27707;
-    color: #312e64;
-    padding: 3px 8px;
-    border-radius: 5px;
-    /* transition: 50s linear ease-in; */
-}
-
-button:hover{
-    background: #312e64;
-    color: #c27707;
-}
-
 
 /* NAVBAR */
 
 .nav-bar{
+    /* position: fixed; */
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 0 auto;
-    padding: 2rem 4rem;
+    padding: 0 4rem;
     border-bottom: 2px solid #c2770752;
 }
 
 .logo{
-    width: 100%;
-    height: 95px;
+    width: 80%;
+    height: 80px;
 }
 
 .nav-bar ul{
     display: flex;
     align-items: center;
     gap: 2.5rem;
-    padding-right: 5rem;
+    /* padding-right: 5rem; */
     font-size: large;
 }
 
@@ -69,10 +56,11 @@ button:hover{
     display: none;
 }
 
-@media screen and (max-width: 768px){
-    navbar
+nav i{
+    color: #312e64;
+    font-size: 35px;
+    cursor: pointer;
 }
-
 
 /* HERO-SECTION */
 
@@ -86,7 +74,7 @@ button:hover{
     border-bottom: 2px solid  #c2770752;
 }
 
-h1{
+#hero-section h1{
     text-align: center;
     color: #312e64;
     margin: 3rem auto 0;
@@ -95,7 +83,7 @@ h1{
     font-weight: 900;
 }
 
-span{
+#hero-section span{
     font-size: 6.5rem;
     font-weight: 500;
     color: #c27707;
@@ -122,15 +110,18 @@ span{
     border-radius: 1rem;
 }
 
+
+
+/* SERVICES */
+
 #services{
     max-width: 80rem;
     margin: 0 auto;
     border-bottom: 2px solid #c2770752;
-    /* border-bottom: 2px solid #35335811; */
 }
 
 .services{
-    margin: 5rem 0;
+    margin: 5rem 1rem;
 }
 
 .services h2{
@@ -186,13 +177,17 @@ span{
     padding: .5rem 2rem;
 }
 
+
+
+/* CONTACT */
+
 #contact-us{
     max-width: 80rem;
     margin: 0 auto;
 }
 
 .contact-us{
-    margin: 5rem 0;
+    margin: 5rem 1rem;
 }
 
 .contact-us h2{
@@ -216,20 +211,20 @@ span{
 .contact-socials{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    margin: 0 1rem;
+    justify-content: space-between;
 }
 
-.phone-socials{
-    display: flex;
-    gap: 2rem;
+.phone{
     font-size: 1.8rem;
+    color: #312e64;
 }
 
-#contact-us i{
-    font-size: 1.8rem;
-    margin-right: -0.5rem;
+.phone span{
+    margin-left: 1rem;
 }
+
+
+/* FOOTER */
 
 #footer{
     display: flex;
@@ -240,11 +235,18 @@ span{
     border-top: 2px solid #c2770752;
 }
 
+.footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 .footer-socials{
     display: flex;
     font-size: 1.5rem;
     color: #312e64;
-    gap: 2rem;
+    gap: 2.5rem;
     padding-top: 1rem;
 }
 
@@ -254,7 +256,96 @@ span{
 }
 
 
+@media screen and (max-width: 768px){
+    .nav-bar{
+        max-width: 768px;
+        padding: 0 2rem;
+    }
 
+    .toggle{
+        display: block;
+    }
+
+    .ri-close-circle-fill{
+        display: none;
+    }
+
+    .nav-bar ul{
+        position: fixed;
+        left: 0;
+        flex-direction: column;
+        background: #f8bc63;
+        transform: translate(-50% -50%);
+        top: -50%;
+        width: 300px;
+        padding: 25px;
+        text-align: center;
+        justify-content: center;
+        font-size: 20px;
+        transition: 1s;
+    }
+
+    #hero-section h1{
+        font-size: 4rem;
+        font-weight: 700;
+    }
+
+    span{
+        font-size: 3.5rem;
+        font-weight: 500;
+    }
+
+    #hero-section p{
+        font-size: 1rem;
+        font-weight: 600;
+        padding-bottom: 2rem;
+    }
+
+    #hero-section img{
+        width: 90%;
+    }
+
+.services{
+    margin: 5rem 2rem;
+}
+
+.services-box{
+    gap: 2.2rem;
+}
+
+.services p{
+    font-size: 1.1rem;
+    line-height: 1.8rem;
+}
+
+.contact-us p{
+    max-width: 35rem;
+}
+
+.contact-socials{
+    flex-direction: column;
+    align-items: center;
+}
+
+.phone span{
+    font-size: 1.5rem;
+    color: #c27707;
+}
+
+#contact-us i{
+    font-size: 1.4rem;
+}
+
+#footer{
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.copyright{
+    font-size: 1.2rem;
+}
+
+}
 
 
 
